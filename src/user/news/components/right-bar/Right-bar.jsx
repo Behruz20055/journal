@@ -19,7 +19,7 @@ export const RightBar = ({
   const [data, setData] = useState([]);
   const viewedItems = useRef(new Set());
 
-  
+
   const fetchData = () => {
     setLoading(true);
     axios
@@ -28,6 +28,8 @@ export const RightBar = ({
         const sortedData = response.data.sort(
           (a, b) => new Date(b.posted_time) - new Date(a.posted_time)
         );
+
+        
         setData(sortedData);
         calculateCategoryCounts(sortedData);
       })
