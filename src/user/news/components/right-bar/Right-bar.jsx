@@ -10,7 +10,6 @@ import classes from "./Right-bar.module.css";
 import { testUrl } from "../../../../shared/routes/configs/testUrl";
 
 export const RightBar = ({
-  selectedCategory,
   searchTerm,
   setCategoriesWithCounts,
 }) => {
