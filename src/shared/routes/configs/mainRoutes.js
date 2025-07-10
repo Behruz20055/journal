@@ -12,6 +12,7 @@ import { NewsPage } from "../../../user/news";
 import Error404Page from "../../pages/Error404Page";
 import Articles from "../../../user/articles/Articles";
 import ArticleDetails from "../../../user/articles/ArticleDetails";
+import NewsDetails from "../../../user/news/newsDetails";
 
 export const mainRoutes = [
   {
@@ -41,6 +42,13 @@ export const mainRoutes = [
     exact: true,
     visibleInNavbar: true,
     element: <NewsPage />,
+  },
+  {
+    text: "Yangiliklar",
+    path: "/news/:id",
+    exact: true,
+    visibleInNavbar: true,
+    element: <NewsDetails />,
   },
   {
     text: "Etika ",
