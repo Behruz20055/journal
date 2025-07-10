@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { NewsCard } from "../card/Card";
 import "moment/locale/uz-latn";
 import classes from "./Right-bar.module.css";
+import { testUrl } from "../../../../shared/routes/configs/testUrl";
 
 export const RightBar = ({
   selectedCategory,
@@ -22,7 +23,7 @@ export const RightBar = ({
   const fetchData = () => {
     setLoading(true);
     axios
-      .get("https://sayt.renessans-edu.uz/api/news/")
+      .get(testUrl + "api/categories/8/")
       .then((response) => {
         const sortedData = response.data.sort(
           (a, b) => new Date(b.posted_time) - new Date(a.posted_time)
