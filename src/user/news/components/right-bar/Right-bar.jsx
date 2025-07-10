@@ -20,6 +20,7 @@ export const RightBar = ({
   const [data, setData] = useState([]);
   const viewedItems = useRef(new Set());
 
+  
   const fetchData = () => {
     setLoading(true);
     axios
