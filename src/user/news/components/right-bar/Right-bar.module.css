@@ -1,0 +1,10 @@
+.box1 {
+  flex: 2;
+  padding: 20px;
+}
+
+.center_div {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}

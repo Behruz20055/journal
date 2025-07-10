@@ -1,0 +1,65 @@
+.container {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    color: #333;
+}
+
+.magazineTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.section {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1.5rem;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.sectionTitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 0.75rem;
+    text-align: left;
+}
+
+.articleHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mainTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+
+.downloadIcon {
+    font-size: 1.1rem;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.downloadIcon:hover {
+    color: #0056b3;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.contentBlock {
+    text-align: justify;
+    line-height: 1.6;
+}

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pacifico&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #133654;
+
+  --bg-white-color: #ffffff;
+  --bg-light-grey-color: #f8fafc;
+
+  --txt-dark-grey-color: #323a56;
+  --txt-grey-color: #8a90a5;
+  --txt-white-color: #ffffff;
+
+  --border-primary-color: #eff2f7;
+}
+
+.span_blue {
+  color: var(--primary-color);
+}
+
+canvas {
+  height: 100% !important;
+}
+#statistic_tsparticles,
+#events_tsparticles {
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+/* swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 600px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+.mySwipper {
+  width: 100%;
+}

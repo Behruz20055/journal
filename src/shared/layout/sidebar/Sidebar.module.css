@@ -1,0 +1,125 @@
+.sidebar {
+  width: 380px;
+  padding: 20px;
+  background: var(--bg-light-grey-color);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.descriptionJorunal {
+  font-size: 13px;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.journalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.journalForm input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Drag & Drop Area */
+.dropZone {
+  padding: 15px;
+  border: 2px dashed #0077cc;
+  background: #f9f9f9;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: border 0.3s, background 0.3s;
+}
+
+.dropZone.active {
+  background: #e0f3ff;
+  border-color: #0055aa;
+}
+
+.dropZone p {
+  font-size: 14px;
+  color: #0077cc;
+}
+
+.submitBtn {
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.submitBtn:hover {
+  background: #002244;
+}
+
+.latestIssue {
+  align-items: start;
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.latestIssue h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.latestIssue img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 0px;
+  margin-right: 260px;
+}
+
+.latestIssue p {
+  position: relative;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 70px;
+  top: -60px;
+}
+
+.downloadBtn {
+  display: block;
+  padding: 8px;
+  background: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.downloadBtn:hover {
+  background: #0055aa;
+}
+
+@media (max-width: 790px) {
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+  }
+}

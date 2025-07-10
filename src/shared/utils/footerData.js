@@ -1,0 +1,121 @@
+export const footerData = [
+  {
+    id: 1,
+    title: 'Asosiy',
+
+    items: [
+      {
+        id: 1,
+        isSection: true,
+        title: 'Boshlash',
+        parentPath: '',
+        path: 'opener',
+      },
+      {
+        id: 2,
+        isSection: true,
+        title: 'Hackathon',
+        parentPath: '',
+        path: 'hackathon',
+      },
+      {
+        id: 3,
+        isSection: true,
+        title: 'Statistika',
+        parentPath: '',
+        path: 'statistic',
+      },
+      {
+        id: 4,
+        isSection: true,
+        title: 'Maktablar',
+        parentPath: '',
+        path: 'school',
+      },
+      {
+        id: 5,
+        isSection: true,
+        title: 'Ustun Jihat',
+        parentPath: '',
+        path: 'advantage',
+      },
+      {
+        id: 6,
+        isSection: true,
+        title: 'Yengiliklar',
+        parentPath: '',
+        path: 'news_section',
+      },
+      {
+        id: 7,
+        isSection: true,
+        title: 'Tadbirlar',
+        parentPath: '',
+        path: 'event',
+      },
+      {
+        id: 8,
+        isSection: true,
+        title: 'Hamkorlar',
+        parentPath: '',
+        path: 'partner',
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: 'Kurslar',
+    path: '/courses',
+    items: [
+      {
+        id: 11,
+        isSection: true,
+        title: 'List',
+        parentPath: 'courses',
+        path: 'category',
+      },
+      {
+        id: 21,
+        isSection: true,
+        title: 'Nazorat',
+        parentPath: 'courses',
+        path: 'control',
+      },
+      {
+        id: 31,
+        isSection: true,
+        title: 'Jamoa',
+        parentPath: 'courses',
+        path: 'team',
+      },
+      {
+        id: 41,
+        isSection: true,
+        title: 'Yondashuv',
+        parentPath: 'courses',
+        path: 'approach',
+      },
+      {
+        id: 51,
+        isSection: true,
+        title: 'Savollar',
+        parentPath: 'courses',
+        path: 'question',
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: 'Boshqalar',
+    items: [
+      {
+        id: 12,
+        isSection: false,
+        title: 'Barcha Yangiliklar',
+        path: 'news',
+      },
+      { id: 2534, isSection: false, title: `Bog'lanish`, path: 'contact' },
+      { id: 33234, isSection: false, title: 'Biz Haqimizda', path: 'about' },
+    ],
+  },
+];
