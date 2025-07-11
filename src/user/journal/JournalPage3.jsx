@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Journal.module.css";
+import { botToken, chatId } from "../../shared/routes/configs/testUrl";
 import { useDropzone } from "react-dropzone";
 import {
   FaBook,
@@ -40,8 +41,6 @@ const Journal = () => {
       return;
     }
 
-    const botToken = "7443223152:AAHhNAB534F-i5sGUyKpR1AwBztad1tyduU";
-    const chatId = "-1002384689140";
     const { fullName, phone, email, category, file } = formData;
 
     if (!chatId) {
